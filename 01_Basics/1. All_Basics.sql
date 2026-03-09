@@ -6,7 +6,7 @@ CREATE DATABASE temp2;
 DROP DATABASE temp1;
 DROP DATABASE temp2;
 
---Create a Student Database
+--Create a College Database
 CREATE DATABASE college;
 
 -- Select the database to create tables
