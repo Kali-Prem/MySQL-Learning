@@ -28,3 +28,33 @@ SELECT * FROM Student ORDER BY age DESC;
 
 -- Select rows and limit the number of results
 SELECT * FROM Student LIMIT 2;
+
+
+
+
+
+
+
+
+-- ========Select===============
+CREATE DATABASE IF NOT EXISTS college;
+USE college;
+
+CREATE TABLE students (
+    rollno INT PRIMARY KEY,
+    name VARCHAR(50),
+    marks INT NOT NULL,
+    grade VARCHAR(1),
+    city VARCHAR(20)
+);
+
+INSERT INTO students VALUES
+(101, 'anil', 78, 'c', 'Pune'),
+(102, 'bhumika', 93, 'A', 'Mumbai'),
+(103, 'chetan', 85, 'B', 'Mumbai'),
+(104, 'dhruv', 96, 'A', 'Delhi'),
+(105, 'Farah', 82, 'B', 'Delhi');
+
+-- SELECT * FROM students;
+-- SELECT name, marks FROM students;
+-- SELECT DISTINCT city FROM students;
