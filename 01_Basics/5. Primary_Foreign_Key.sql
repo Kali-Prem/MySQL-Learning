@@ -1,3 +1,9 @@
+-- ===================Constraints======================
+PRIMARY KEY,
+FOREIGN KEY,
+DEFAULT,
+CHECK.
+
 -- Primary key is a Constraint which helps to take the unique id or we can say that it helps to make each data unique in the table
 --  Primary key is defined only one time in the table .
 --  It can make one column unique and multiple column unique.
@@ -85,3 +91,22 @@ CREATE TABLE emp (
 INSERT INTO emp (id) VALUES (101);
 
 SELECT * FROM emp;
+
+
+
+-- ============Check=============
+Syntax:
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    ...
+    CHECK (condition)
+);  
+Example:
+CREATE TABLE products (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    price FLOAT,
+    CHECK (price > 0)
+);
+
