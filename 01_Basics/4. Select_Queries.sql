@@ -47,6 +47,8 @@ CREATE TABLE students (
     grade VARCHAR(1),
     city VARCHAR(20)
 );
+USE college;
+DROP TABLE students;
 
 INSERT INTO students VALUES
 (101, 'anil', 78, 'c', 'Pune'),
@@ -58,3 +60,4 @@ INSERT INTO students VALUES
 -- SELECT * FROM students;
 -- SELECT name, marks FROM students;
 -- SELECT DISTINCT city FROM students;
+DROP TABLE students;
